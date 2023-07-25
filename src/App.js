@@ -1,9 +1,17 @@
+import ErrorComponent from "./components/ErrorComponent";
+import About from "./pages/About";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-    <h1>hello</h1>
-    </div>
+    <>
+      <ErrorComponent>
+        <Home />
+      </ErrorComponent>
+      <ErrorComponent>
+        <About />
+      </ErrorComponent>
+    </>
   );
 }
 
